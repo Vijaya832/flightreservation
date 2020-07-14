@@ -1,0 +1,7 @@
+# Created at 2020-07-13T15:47:33.580
+Boot Manifest-JAR contains absolute paths in classpath 'G:\com.cg.flighReservationApplication\com.cg.flighReservationApplication\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+
+# Created at 2020-07-13T15:59:36.482
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=256m; support was removed in 8.0
+

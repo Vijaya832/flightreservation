@@ -1,0 +1,153 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-07-13T13:36:02.864Z",
+        "line": 9,
+        "name": "Book the flight with least fare with chrome browser",
+        "description": "",
+        "id": "flight-booking-in-make-my-trip-application;book-the-flight-with-least-fare-with-chrome-browser;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 49944000000,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "User navigates to the make my trip home page in chrome browser",
+            "match": {
+              "location": "com.cg.steps.flightSteps.user_navigates_to_the_make_my_trip_home_page_in_chrome_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 193437000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user enters \"Hyderabad, India\" and  \"Bangalore, India\" of the journey",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Hyderabad, India\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"Bangalore, India\"",
+                  "offset": 36
+                }
+              ],
+              "location": "com.cg.steps.flightSteps.user_enters_and_of_the_journey(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 10001000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User select the evening flight",
+            "match": {
+              "location": "com.cg.steps.flightSteps.user_select_the_evening_flight()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//button[text()\u003d\u0027Book Now\u0027]\"}\n  (Session info: chrome\u003d83.0.4103.116)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-09U4907\u0027, ip: \u0027192.168.0.27\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_251\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\\Users\\Santhosh\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:58536}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 42dbe1d536e481361b2be02968e6f6e4\n*** Element info: {Using\u003dxpath, value\u003d//button[text()\u003d\u0027Book Now\u0027]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy15.getWrappedElement(Unknown Source)\r\n\tat org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:50)\r\n\tat java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)\r\n\tat java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)\r\n\tat java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)\r\n\tat java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)\r\n\tat java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)\r\n\tat java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\r\n\tat java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:484)\r\n\tat com.cg.utils.CommonMethods.jsClick(CommonMethods.java:64)\r\n\tat com.cg.steps.flightSteps.user_Select_the_Flight_for_his_journey(flightSteps.java:37)\r\n\tat ✽.User Select the Flight for his journey(file:///G:/com.cg.flighReservationApplication/com.cg.flighReservationApplication/src/test/resources/features/sprint1.feature:6)\r\n",
+              "duration": 40920000000,
+              "status": "failed"
+            },
+            "line": 6,
+            "name": "User Select the Flight for his journey",
+            "match": {
+              "location": "com.cg.steps.flightSteps.user_Select_the_Flight_for_his_journey()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-07-13T13:40:58.088Z",
+        "line": 10,
+        "name": "Book the flight with least fare with chrome browser",
+        "description": "",
+        "id": "flight-booking-in-make-my-trip-application;book-the-flight-with-least-fare-with-chrome-browser;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 38150000000,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "User navigates to the make my trip home page in chrome browser",
+            "match": {
+              "location": "com.cg.steps.flightSteps.user_navigates_to_the_make_my_trip_home_page_in_chrome_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 47648000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user enters \"Hyderabad, India\" and  \"Chennai, India\" of the journey",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Hyderabad, India\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"Chennai, India\"",
+                  "offset": 36
+                }
+              ],
+              "location": "com.cg.steps.flightSteps.user_enters_and_of_the_journey(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 10001000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User select the evening flight",
+            "match": {
+              "location": "com.cg.steps.flightSteps.user_select_the_evening_flight()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath\u003d//button[text()\u003d\u0027Book Now\u0027]\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-09U4907\u0027, ip: \u0027192.168.0.27\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_251\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy15.getWrappedElement(Unknown Source)\r\n\tat org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:50)\r\n\tat java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)\r\n\tat java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)\r\n\tat java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)\r\n\tat java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)\r\n\tat java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)\r\n\tat java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\r\n\tat java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:484)\r\n\tat com.cg.utils.CommonMethods.jsClick(CommonMethods.java:64)\r\n\tat com.cg.steps.flightSteps.user_Select_the_Flight_for_his_journey(flightSteps.java:37)\r\n\tat ✽.User Select the Flight for his journey(file:///G:/com.cg.flighReservationApplication/com.cg.flighReservationApplication/src/test/resources/features/sprint1.feature:6)\r\n",
+              "duration": 25266000000,
+              "status": "failed"
+            },
+            "line": 6,
+            "name": "User Select the Flight for his journey",
+            "match": {
+              "location": "com.cg.steps.flightSteps.user_Select_the_Flight_for_his_journey()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Flight Booking in make my trip application",
+    "description": "",
+    "id": "flight-booking-in-make-my-trip-application",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/sprint1.feature",
+    "tags": []
+  }
+]
